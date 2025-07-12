@@ -1,1 +1,1 @@
-A web app to kisten to the top trending Gospel Music 
+A web app to listen to the top trending Gospel Music 
