@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*     background: #C6FFDD; Fall back default browser
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
+    background: linear-gradient(45deg, #f7797d, #FBD786, #C6FFDD);  */
+    background: #2C3E50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C3E50, #4CA1AF, #A5C9CA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, #2C3E50, #4CA1AF, #A5C9CA);
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.music-player{
+    width: 350px;
+    height: 550px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 40px 100px rgba(255, 255, 255, 0.1);
+}
+.music-name, 
+.artist-name{
+    text-align: center;
+    text-transform: capitalize;
+}
+.artist-name{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.artist-name{
+    font-size: 20px;
+}
+.disk{
+    position: relative;
+    display: flex;
+    justify-self: center;
+    margin: 40 auto;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: black;
+    background-size: cover;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3);
+}
+.disk::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #2C3E50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C3E50, #4CA1AF, #A5C9CA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, #2C3E50, #4CA1AF, #A5C9CA);
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.center{
+    width: 100%;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.song-slider{
+    width: 90%;
+    position: relative;
+    margin-top: 10px;
+}
+.seek-bar{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 4px;
+    background: #34495E;
+    cursor: pointer;
+    overflow: hidden;
+}
+.seek-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 1px;
+    height: 20px;
+    background: black;
+    box-shadow: -400px 0 0 400px #d5eebb;
+}
+.current-time,
+.song-duration{
+    font-size: 10px;
+}
+.song-duration{
+    position: absolute;
+    right:0;
+}

@@ -1,32 +1,32 @@
 let song =[
     {
-        name :'',
+        name :'Gratitude',
         path: '',
-        artist: '',
+        artist: 'Brandon Lake',
         cover:''
     },
     {
-        name:'',
+        name:'I Thank God',
         path:'',
-        artist:'',
+        artist:'Maverick City Music, UPPERROOM',
         cover:''
     },
     {
-        name:'',
+        name:'Jireh',
         path:'',
-        artist:'',
+        artist:'Elevation Worship & Maverick City Music',
         conver:''
     },
     {
-        name:'',
+        name:'Way Maker',
         path:'',
-        artist:'',
+        artist:'Sinach',
         cover:''
     },
     {
-        name:'',
+        name:'Honey in the Rock',
         path:'',
-        artist:'',
+        artist:'Brooke Ligertwood',
         cover:''
     }
 ]
