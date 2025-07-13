@@ -46,8 +46,9 @@ body{
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    background: black;
+    background: url(images/gratitude.jpg);
     background-size: cover;
+    background-position: 30%;
     box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3);
 }
 .disk::before{
@@ -100,4 +101,37 @@ body{
 .song-duration{
     position: absolute;
     right:0;
+}
+.controls{
+    background-color: red;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+}
+.play-btn{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #34495E;
+    cursor: pointer;
+    border: none;
+}
+.play-btn span{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 30px;
+    border-radius: 2px;
+    background: yellow;
+    transition: .5s;
+}
+.play-btn span:nth-child(2){
+    left: 55%;
+    transform-origin: center;
 }
